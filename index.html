@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>Color Picker Vanilla JS App</title>
   </head>
+
   <body>
     <main>
       <section class="top">
         <input type="color" id="color" value="#F55A5A" />
-        <select>
-          <option value="">Monochrome</option>
+        <select id="mode">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
         </select>
-        <button>Get Color Scheme</button>
+        <button id="btn-color">Get Color Scheme</button>
       </section>
 
       <section class="bottom">
@@ -27,19 +38,19 @@
         </div>
         <div class="color-box">
           <div></div>
-          <div>#F55A5A</div>
+          <div>#2B283A</div>
         </div>
         <div class="color-box">
           <div></div>
-          <div>#F55A5A</div>
+          <div>#FBF3AB</div>
         </div>
         <div class="color-box">
           <div></div>
-          <div>#F55A5A</div>
+          <div>#AAD1B6</div>
         </div>
         <div class="color-box">
           <div></div>
-          <div>#F55A5A</div>
+          <div>#A626D3</div>
         </div>
       </section>
     </main>
